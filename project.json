@@ -1,11 +1,12 @@
 {
   "name": "EmailApproval",
+  "projectId": "5238e90a-0a68-4fb3-8027-c52e5d9a9a83",
   "description": "EmailApproval - ",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.11.4]",
-    "UiPath.Mail.Activities": "[1.12.3]",
+    "UiPath.Mail.Activities": "[1.22.0-preview]",
     "UiPath.System.Activities": "[21.10.4]",
     "UiPath.UIAutomation.Activities": "[21.10.5]"
   },
@@ -13,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.5.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.15",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -21,6 +22,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -28,7 +30,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -41,7 +44,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
